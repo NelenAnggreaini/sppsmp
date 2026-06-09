@@ -1,0 +1,358 @@
+/* ===== THEME: NAVY BLUE PROFESSIONAL (FIXED TOTAL NO BENTROK) ===== */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght=400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    background: #EFF6FF !important; /* Biru es super clean */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.dashboard-full {
+    background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%) !important;
+    min-height: 100vh !important;
+    display: block !important;
+    position: relative !important;
+}
+
+/* TOP HEADER */
+.top-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 40px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+    margin: 0 !important;
+}
+
+.status-badge {
+    background: #FFFFFF !important;
+    border: 1px solid #BFDBFE !important;
+    color: #1E3A5F !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.08) !important; /* Shadow Navy */
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.status-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background: #22C55E !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 8px #22C55E !important;
+}
+
+/* HERO TITLE */
+.hero-title {
+    text-align: center !important;
+    margin: 20px 0 40px 0 !important;
+    width: 100% !important;
+}
+
+.hero-title h1 {
+    color: #1E3A5F !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 15px 0 !important;
+}
+
+.welcome-box {
+    display: inline-block !important;
+    background: #DBEAFE !important;
+    padding: 10px 30px !important;
+    border-radius: 15px !important;
+    border: 1px dashed #2563EB !important;
+}
+
+.welcome-text { color: #1E3A5F !important; font-weight: 600 !important; margin: 0 !important; }
+.welcome-text strong { color: #2563EB !important; }
+
+/* MENU GRID & GLASS CARD */
+.menu-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 25px !important;
+    max-width: 1100px !important;
+    margin: 0 auto 40px auto !important;
+    padding: 0 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* FIX OPTIK: Ganti border abu-abu & shadow hitam menjadi berbasis soft-blue/navy */
+.glass-card, .glass-card-rekap {
+    background: #FFFFFF !important;
+    border: 1px solid #BFDBFE !important; /* Menggunakan border biru lembut */
+    border-radius: 20px !important;
+    padding: 35px 20px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: 0.3s !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-shadow: 0 8px 24px rgba(30, 58, 95, 0.08) !important; /* BAYANGAN NAVY BLUE (ANTI KUMAL) */
+}
+
+/* Card class - with flexbox centering (default) */
+.card {
+    background: #FFFFFF !important;
+    border: 1px solid #BFDBFE !important; /* Menggunakan border biru lembut */
+    border-radius: 20px !important;
+    padding: 35px 20px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    transition: 0.3s !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-shadow: 0 8px 24px rgba(30, 58, 95, 0.08) !important; /* BAYANGAN NAVY BLUE (ANTI KUMAL) */
+}
+
+/* Card class - override for form inputs (LEFT aligned) */
+.card[style*="text-align: left"] {
+    display: block !important;
+    text-align: left !important;
+    flex-direction: column !important;
+    align-items: unset !important;
+}
+
+.glass-card:hover { 
+    transform: translateY(-5px) !important; 
+    border-color: #2563EB !important; 
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18) !important;
+}
+
+/* PAKSA WARNA UTAMA IKON JADI BIRU */
+.glass-card .card-icon,
+.card-icon {
+    width: 70px !important;
+    height: 70px !important;
+    background: #EFF6FF !important;
+    border-radius: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 10px auto !important;
+}
+
+.glass-card .card-icon i,
+.card-icon i {
+    font-size: 1.8rem !important;
+    color: #2563EB !important; 
+}
+
+/* JUDUL MENU JADI NAVY GELAP */
+.glass-card h2,
+.glass-card h3,
+.card-number,
+.card-link h3 {
+    color: #1E3A5F !important; 
+    font-weight: 700 !important;
+    margin: 10px 0 5px 0 !important;
+    text-decoration: none !important;
+}
+
+.card-number {
+    font-size: 2.5rem !important;
+}
+
+/* SUBTEKS SLATE GREY */
+.glass-card p,
+.glass-card .card-desc,
+.glass-card .card-label,
+.card-desc,
+.card-label {
+    color: #64748B !important; 
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+}
+
+/* ===== OVERRIDE: Card layout for form containers ===== */
+#card-input-pembayaran {
+    display: block !important;
+    align-items: initial !important;
+    flex-direction: initial !important;
+    text-align: left !important;
+}
+
+#card-input-pembayaran .card-body {
+    display: block !important;
+    text-align: left !important;
+}
+
+#card-input-pembayaran .form-group {
+    display: block !important;
+    text-align: left !important;
+    align-items: initial !important;
+}
+
+#card-input-pembayaran .form-group label {
+    text-align: left !important;
+    display: block !important;
+}
+
+/* LOGOUT SECTION */
+.logout-section {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+    padding-bottom: 50px !important;
+}
+
+.btn-logout {
+    background: #EF4444 !important;
+    color: white !important;
+    padding: 12px 35px !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* REKAP PAGE PREMIUM */
+
+.total-row td{
+    background:#EFF6FF !important;
+    color:#1E3A5F !important;
+    font-weight:800 !important;
+    border-top:2px solid #2563EB !important;
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+.content-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+.content-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+}
+
+/* FORCE REKAP THEME */
+
+.glass-card{
+    background:#FFFFFF !important;
+    border:1px solid #BFDBFE !important;
+}
+
+.glass-card .card-icon{
+    background:#EFF6FF !important;
+}
+
+.glass-card .card-icon i{
+    color:#2563EB !important;
+}
+
+.glass-card h3{
+    color:#1E3A5F !important;
+}
+
+.glass-card p{
+    color:#64748B !important;
+}
+
+/* ===== OVERRIDE: Card layout for riwayat pembayaran ===== */
+#card-riwayat-pembayaran {
+    display: block !important;
+    align-items: initial !important;
+    flex-direction: initial !important;
+    text-align: left !important;
+}
+
+#card-riwayat-pembayaran .card-body {
+    display: block !important;
+    text-align: left !important;
+}
+
+/* ===== TABLE STYLING ===== */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 0.95rem !important;
+}
+
+table thead {
+    background: #1E3A5F !important;
+    color: white !important;
+}
+
+/* ===== GLOBAL FOOTER ===== */
+.global-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #d6e4ff;
+    background: transparent;
+    color: #5b6b8c;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.global-footer span {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .global-footer {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+}
+
+table thead tr {
+    height: 45px !important;
+}
+
+table thead th {
+    padding: 12px 15px !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+    border: none !important;
+    color: white !important;
+    background: #1E3A5F !important;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #E5E7EB !important;
+    transition: background-color 0.2s !important;
+}
+
+table tbody tr:hover {
+    background: #F8FAFC !important;
+}
+
+table tbody td {
+    padding: 14px 15px !important;
+    color: #334155 !important;
+    border: none !important;
+}
